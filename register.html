@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" href="css/register.css">
+		<script src="js/jquery-2.1.0.min.js"></script>
+    </head>
+	<body>
+        
+    	<div class="rg_layout">
+    		<div class="rg_form clearfix">
+    			<div class="rg_form_left">
+    				<p>USER REGISTER</p>
+    				<p></p>
+    			</div>
+    			<div class="rg_form_center">
+					
+    				<form id="registerForm" action="register_ok.html">
+						
+						<input type="hidden" name="action" value="register">
+    					<table style="margin-top: 25px;">
+    						<tr>
+    							<td class="td_left">
+    								<label for="username">Username</label>
+    							</td>
+    							<td class="td_right">
+    								<input type="text" id="username" name="username" placeholder="please input your username">
+    							</td>
+    						</tr>
+    						<tr>
+    							<td class="td_left">
+    								<label for="password">Password</label>
+    							</td>
+    							<td class="td_right">
+    								<input type="text" id="password" name="password" placeholder="please input your password">
+    							</td>
+    						</tr>
+    						<tr>
+    							<td class="td_left">
+    								<label for="email">Email</label>
+    							</td>
+    							<td class="td_right">
+    								<input type="text" id="email" name="email" placeholder="please input your email">
+    							</td>
+    						</tr>
+    						<tr>
+    							<td class="td_left">
+    								<label for="firstname">First Name</label>
+    							</td>
+    							<td class="td_right">
+    								<input type="text" id="firstname" name="firstname" placeholder="please input your first name">
+    							</td>
+    						</tr>
+							<tr>
+								<td class="td_left">
+									<label for="middlename">Middle Name</label>
+								</td>
+								<td class="td_right">
+									<input type="text" id="middlename" name="middlename" placeholder="please input your middle name">
+								</td>
+							</tr>
+    						<tr>
+    							<td class="td_left">
+    								<label for="lastname">Last Name</label>
+    							</td>
+    							<td class="td_right">
+    								<input type="text" id="lastname" name="lastname" placeholder="please input your last name">
+    							</td>
+    						</tr>
+    						
+    						<tr>
+    							<td class="td_left">
+    								<label for="birthday">Birthday</label>
+    							</td>
+    							<td class="td_right">
+    								<input type="date" id="birthday" name="birthday" placeholder="year/month/day">
+    							</td>
+    						</tr>
+    						<tr>
+    							<td class="td_left">
+    								<label for="check">Verify Code</label>
+    							</td>
+    							<td class="td_right check">
+    								<input type="text" id="check" name="check" class="check">
+    								<img src="checkCode" height="32px" alt="" onclick="changeCheckCode(this)">
+									<script type="text/javascript">
+										
+										function changeCheckCode(img) {
+											img.src="checkCode?"+new Date().getTime();
+                                        }
+									</script>
+    							</td>
+    						</tr>
+    						<tr>
+    							<td class="td_left"> 
+    							</td>
+    							<td class="td_right check"> 
+    								<input type="submit" class="submit" value="Register">
+									<span id="msg" style="color: red;"></span>
+    							</td>
+    						</tr>
+    					</table>
+    				</form>
+    			</div>
+    			<div class="rg_form_right">
+    				<p>
+    					Have an account?
+    					<a href="login.html">Login</a>
+    				</p>
+    			</div>
+    		</div>
+    	</div>
+        <footer id="footer">
+            <div class="why_select">
+                <dl>
+                    <dt class="fl">
+                        <img src="images/icon_1.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <h1>Title</h1>
+                        <h2>Detail</h2>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="fl">
+                        <img src="images/icon_2.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <h1>Title</h1>
+                        <h2>Detail</h2>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="fl">
+                        <img src="images/icon_3.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <h1>Title</h1>
+                        <h2>Detail</h2>
+                    </dd>
+                </dl>
+        		<dl>
+        		    <dt class="fl">
+        		        <img src="images/icon_3.jpg" alt="">
+        		    </dt>
+        		    <dd>
+        		        <h1>Title</h1>
+        		        <h2>Detail</h2>
+        		    </dd>
+        		</dl>
+        		<dl>
+        		    <dt class="fl">
+        		        <img src="images/icon_3.jpg" alt="">
+        		    </dt>
+        		    <dd>
+        		        <h1>Title</h1>
+        		        <h2>Detail</h2>
+        		    </dd>
+        		</dl>
+                <dl>
+                    <dt class="fl">
+                        <img src="images/icon_4.jpg" alt="">
+                    </dt>
+                    <dd style="margin-right:0px;">
+                        <h1>Title</h1>
+                        <h2>Detail</h2>
+                    </dd>
+                </dl>       		
+            </div>
+        </footer>		
+    </body>
+</html>
